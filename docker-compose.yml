@@ -4,7 +4,7 @@ services:
   redis:
     image: eqalpha/keydb
     ports:
-      - "6379:6379"
+      - "6379:6378"
 
   # MongoDB
   database:
@@ -63,7 +63,7 @@ services:
     environment:
       - AUTUMN_MONGO_URI=mongodb://database
     ports:
-      - "3000:3000"
+      - "3001:3001"
     restart: always
 
   # Metadata and image proxy (january)
